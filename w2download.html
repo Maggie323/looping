@@ -17,7 +17,7 @@
 <body>
   <h1>Whee!!!</h1>
 
-  <img id="roller" src="text" alt="roller coaster">
+  <img id="roller" src="http://images.mentalfloss.com/sites/default/files/styles/width-constrained-728/public/503373-iStock-186293315.jpg"  alt="roller coaster">
 
   <script>
     // Description:
@@ -48,14 +48,16 @@
     theImg.setAttribute("src", imageSources[0]);
 
     // TODO: set howMany variable to a value user inputs
-//		I set my value to 3
+		//  I set my value to "prompt ("How many times would you like to ride the roller coaster")"
 		
-    var howMany = 3;
+    var howMany = prompt ("How many times would you like to ride the roller coaster");
+		
 
     var counter = 1;
 
     // TODO: execute this loop the number of times user requested
-    while(false){
+		// I CHANGED 'WHILE (FALSE)' TO 'WHILE (counter < 3)'
+    while(counter < howMany){
       console.log("Wheee! This is the ", counter, " time we've done this!");
 
       // find value of counter modulo length of sources array-
@@ -66,7 +68,10 @@
       theImg.setAttribute("src", imageSources[theOne]);
 
       // TODO: increment the counter
+			// I ADDED 'COUNTER = COUNTER + 1'
+			counter = counter + 1;
     }
+		console.log("We're done with this ride!");
 
     // EXTRA CHALLENGES:
     // 1. Using JS, add a class of "red" to the <h1>.
