@@ -1,0 +1,19 @@
+body {
+	background-color: #80bfff;
+}
+h1 {
+	text-align: center;
+}
+h1:hover {
+	background-color: aquamarine;
+}
+img {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 60%;
+}
+
+img:hover {
+	width: 80%;
+}
